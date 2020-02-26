@@ -9,7 +9,6 @@ function takeRequest(data,success,failure){
         failure();
     }
 }
-
 function success()
 {
     console.log("completed");
