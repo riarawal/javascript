@@ -1,13 +1,11 @@
 let arr=[2,6,17,28,46,68];
 
-
 const map1 = arr.map(function(ele){
     if(ele%2==0)
         return ele+1;
     else
         return ele-1;
 })
-
 console.log(map1);
 const prime = map1.filter(function pr(num){
     var f=0;
