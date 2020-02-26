@@ -38,6 +38,7 @@ function prime(num)
     }
 
 }
+
 map11(arr,ov);
 map12(arr,prime);
 console.log(myarr);
