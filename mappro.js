@@ -1,4 +1,5 @@
 let arr=[2,6,17,28,46,68];
+
 Array.prototype.map11=function(ov)
 {
     for(let i=0;i<this.length;i++)
@@ -40,8 +41,10 @@ function prime(num)
         return num;
     }
 }
+
 let s=arr.map11(ov);
 let r=arr.map12(prime);
+
 console.log(r);
 console.log(s);
 
