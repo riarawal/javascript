@@ -14,6 +14,7 @@ function ov(ele)
     return ele-1;
 }
 let myarr=[];
+
 function map12(arr,prime)
 {
     for(let i=0;i<arr.length;i++)
