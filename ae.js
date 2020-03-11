@@ -6,7 +6,6 @@ function map11(arr,ov)
        arr[i]=ov(arr[i]);
     }
 }
-
 function ov(ele)
 {
     if(ele%2==0)
