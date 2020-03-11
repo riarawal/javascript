@@ -6,6 +6,7 @@ function map11(arr,ov)
        arr[i]=ov(arr[i]);
     }
 }
+
 function ov(ele)
 {
     if(ele%2==0)
@@ -14,7 +15,6 @@ function ov(ele)
     return ele-1;
 }
 let myarr=[];
-
 function map12(arr,prime)
 {
     for(let i=0;i<arr.length;i++)
@@ -38,7 +38,6 @@ function prime(num)
     }
 
 }
-
 map11(arr,ov);
 map12(arr,prime);
 console.log(myarr);
