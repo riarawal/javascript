@@ -1,20 +1,26 @@
-let root = {
-    data: 10,
-    children: [
-        { data: 20, children: [{ data: 50, children: [] }, { data: 60, children: [] }] },
-        { data: 30, children: [{ data: 70, children: [{data:130,children:[]}] }, { data: 80, children: [] }] },
-        { data: 40, children: [{ data: 90, children: [] }, { data: 100, children: [] }] }
-    ]
-};
-function displayTree(root) {
-    let str = " " + root.data + "=>";
-    for (let i = 0; i < root.children.length; i++) {
-        str += root.children[i].data +",";
-    }
-    console.log(str);
-    for (let i = 0; i < root.children.length; i++) {
-        displayTree(root.children[i]);
-    }
+let fs=require("fs");
+let path=require("path");
+function displayTree(indent,src)
+{
+    let ans=fs.lstatSync(src).isDirectory();
 
+    if(ans==false)
+{ console.log(indent+path.basename(src)+"*");
+
+    //console.log("i m file");
+    
 }
-displayTree(root)
+   else{
+    //console.log("i m directory");
+    console.log(indent+path.basename(src));
+    
+
+let children=fs.readdirSync(src);
+for (let i=0;i<children.length;i++)
+{
+    let cPath=path.join(src,children[i]);
+    displayTree(indent+" ",cPath)
+}
+}}
+let indent=" "
+displayTree(indent,".\\src\\d10")
