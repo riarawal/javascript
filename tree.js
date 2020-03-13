@@ -17,7 +17,7 @@ function displayTree(indent,src)
     //console.log("i m directory");
     console.log(indent+path.basename(src));
     
-//to get children from dir.
+//to get children from dir. i.e.display content
 let children=fs.readdirSync(src);
 for (let i=0;i<children.length;i++)
 {
