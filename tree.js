@@ -1,4 +1,5 @@
 //code to display as tree
+//use require
 let fs=require("fs");
 let path=require("path");
 function displayTree(indent,src)
