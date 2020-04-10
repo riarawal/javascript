@@ -1,2 +1,2 @@
 # javascript 
-codes in js_scripting
+codes in js_scripting codes
