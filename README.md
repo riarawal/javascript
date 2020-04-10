@@ -1,2 +1,2 @@
 # javascript 
-codes
+codes in js
