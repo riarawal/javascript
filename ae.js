@@ -1,4 +1,4 @@
-let arr=[2,6,8,10,17,28,46,68];
+let arr=[2,6,8,10,17,28,40,46,68];
 function map11(arr,ov)
 {
     for(let i=0;i<arr.length;i++)
