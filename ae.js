@@ -1,5 +1,6 @@
 let arr=[2,6,8,10,17,28,40,46,50,68];
 
+
 function map11(arr,ov)
 
 {
